@@ -1,0 +1,69 @@
+<template>
+  <el-table
+    border
+    :data="data">
+    <el-table-column
+      prop="name"
+      label="name">
+    </el-table-column>
+    <el-table-column
+      prop="latitude"
+      label="latitude">
+    </el-table-column>
+    <el-table-column
+      prop="longitude"
+      label="longitude">
+    </el-table-column>
+    <el-table-column
+      prop="byear"
+      label="byear">
+    </el-table-column>
+    <el-table-column
+      prop="education"
+      label="education">
+    </el-table-column>
+    <el-table-column
+      prop="memory"
+      label="memory">
+    </el-table-column>
+    <el-table-column
+      prop="aspiration"
+      label="aspiration">
+    </el-table-column>
+    <el-table-column
+      prop="tolerance_income"
+      label="tolerance_income">
+    </el-table-column>
+    <el-table-column
+      prop="tolerance_activity"
+      label="tolerance_activity">
+    </el-table-column>
+    <el-table-column
+      prop="lambda"
+      label="lambda">
+    </el-table-column>
+    <el-table-column
+      prop="alpha_plus"
+      label="alpha_plus">
+    </el-table-column>
+    <el-table-column
+      prop="alpha_minus"
+      label="alpha_minus">
+    </el-table-column>
+    <el-table-column
+      prop="phi_plus"
+      label="phi_plus">
+    </el-table-column>
+    <el-table-column
+      prop="phi_minus"
+      label="phi_minus">
+    </el-table-column>
+  </el-table>
+</template>
+
+<script>
+export default {
+  name: 'tableData',
+  props: ['data'],
+}
+</script>
