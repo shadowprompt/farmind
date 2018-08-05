@@ -11,7 +11,7 @@ export default new Vuex.Store({
   },
   mutations:{
     SET_IMPORT_DATA(state, payload){
-      state.importData = payload;
+      state.importData = payload.slice();
     },
     SET_PARAMS(state, payload){
       const header = payload[0]; // 头部
@@ -30,8 +30,10 @@ export default new Vuex.Store({
   },
   actions:{
     _setParams(context, payload){
-      context.commit('SET_PARAMS', payload);
+      console.log('payload -> ', payload);
       context.commit('SET_IMPORT_DATA', payload);
-    }
+      context.commit('SET_PARAMS', payload);
+    },
+
   }
 });
