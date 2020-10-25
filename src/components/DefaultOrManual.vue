@@ -21,7 +21,7 @@
 
 <script>
   export default {
-    name: 'defaultOrManual',
+    name: 'DefaultOrManual',
     data() {
       return {
         isSelect: true,
@@ -30,7 +30,3 @@
     }
   }
 </script>
-
-<style scoped>
-
-</style>
